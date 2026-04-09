@@ -57,7 +57,7 @@ export const useWebSocket = () => {
 
   const connect = useCallback(() => {
     try {
-      const ws = new WebSocket('ws://localhost:8080');
+      const ws = new WebSocket('https://thirudan-police.onrender.com');
       
       ws.onopen = () => {
         console.log('WebSocket connected');
